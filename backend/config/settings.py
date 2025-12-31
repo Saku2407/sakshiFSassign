@@ -26,3 +26,5 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+REST_FRAMEWORK['EXCEPTION_HANDLER'] = 'common.exceptions.custom_exception_handler'
