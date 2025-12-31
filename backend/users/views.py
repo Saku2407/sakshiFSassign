@@ -14,7 +14,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import User
-from .serializers import RegisterSerializer
+from .serializer import RegisterSerializer
 from .encryption import decrypt_data
 
 
@@ -34,5 +34,3 @@ class ProfileView(generics.RetrieveAPIView):
             "email": user.email,
             "aadhaar": decrypt_data(user.aadhaar_encrypted)
         })
-
-# why the fuck can't I push this onto github?? WHY CAN'T i COMMIT THIS? OR ADD? g
