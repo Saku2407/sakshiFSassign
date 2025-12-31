@@ -34,3 +34,5 @@ class ProfileView(generics.RetrieveAPIView):
             "email": user.email,
             "aadhaar": decrypt_data(user.aadhaar_encrypted)
         })
+
+# why the fuck can't I push this onto github?? WHY CAN'T i COMMIT THIS? OR ADD? g
